@@ -591,31 +591,7 @@
                             }
                         ]
                     },
-                    {
-                        "tab": "访问 API",
-                        "groups": [
-                            {
-                                "group": "Chatbot 和 Agent",
-                                "openapi": "zh-hans/openapi_chat.json"
-                            },
-                            {
-                                "group": "Chatflow",
-                                "openapi": "zh-hans/openapi_chatflow.json"
-                            },
-                            {
-                                "group": "工作流",
-                                "openapi": "zh-hans/openapi_workflow.json"
-                            },
-                            {
-                                "group": "文本生成",
-                                "openapi": "zh-hans/openapi_completion.json"
-                            },
-                            {
-                                "group": "知识库 API",
-                                "openapi": "zh-hans/openapi_knowledge.json"
-                            }
-                        ]
-                    },
+
                     {
                         "tab": "资源",
                         "pages": [

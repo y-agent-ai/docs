@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Yagent Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -9,65 +9,629 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "使用文档",
-        "groups": [
-          {
-            "group": "入门",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
+        "versions": [
+            {
+                "version": "简体中文",
+                "tabs": [
+                    {
+                        "tab": "使用文档",
+                        "groups": [
+                            {
+                                "group": "入门",
+                                "pages": [
+                                    {
+                                        "group": "欢迎使用 ",
+                                        "pages": [
+                                            "zh-hans/introduction",
+                                            "zh-hans/getting-started/readme/features-and-specifications",
+                                            "zh-hans/getting-started/readme/model-providers"
+                                        ]
+                                    },
+                                    "zh-hans/getting-started/cloud",
+                                    "zh-hans/getting-started/dify-premium",
+                                    "zh-hans/getting-started/dify-for-education",
+                                    "zh-hans/openapi-api-access-readme"
+                                ]
+                            },
+                            {
+                                "group": "手册",
+                                "pages": [
+                                    {
+                                        "group": "接入大模型",
+                                        "pages": [
+                                            "zh-hans/guides/model-configuration/readme",
+                                            "zh-hans/guides/model-configuration/new-provider",
+                                            "zh-hans/guides/model-configuration/predefined-model",
+                                            "zh-hans/guides/model-configuration/customizable-model",
+                                            "zh-hans/guides/model-configuration/interfaces",
+                                            "zh-hans/guides/model-configuration/schema",
+                                            "zh-hans/guides/model-configuration/load-balancing"
+                                        ]
+                                    },
+                                    {
+                                        "group": "构建应用",
+                                        "pages": [
+                                            "zh-hans/guides/application-orchestrate/readme",
+                                            "zh-hans/guides/application-orchestrate/creating-an-application",
+                                            {
+                                                "group": "聊天助手",
+                                                "pages": [
+                                                    "zh-hans/guides/application-orchestrate/chatbot-application",
+                                                    "zh-hans/guides/application-orchestrate/multiple-llms-debugging"
+                                                ]
+                                            },
+                                            "zh-hans/guides/application-orchestrate/agent",
+                                            {
+                                                "group": "应用工具箱",
+                                                "pages": [
+                                                    "zh-hans/guides/application-orchestrate/app-toolkits/readme",
+                                                    "zh-hans/guides/application-orchestrate/app-toolkits/moderation-tool"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "group": "工作流",
+                                        "pages": [
+                                            "zh-hans/guides/workflow/readme",
+                                            "zh-hans/guides/workflow/key-concept",
+                                            "zh-hans/guides/workflow/variables",
+                                            {
+                                                "group": "节点说明",
+                                                "pages": [
+                                                    "zh-hans/guides/workflow/node/start",
+                                                    "zh-hans/guides/workflow/node/llm",
+                                                    "zh-hans/guides/workflow/node/knowledge-retrieval",
+                                                    "zh-hans/guides/workflow/node/question-classifier",
+                                                    "zh-hans/guides/workflow/node/ifelse",
+                                                    "zh-hans/guides/workflow/node/code",
+                                                    "zh-hans/guides/workflow/node/template",
+                                                    "zh-hans/guides/workflow/node/doc-extractor",
+                                                    "zh-hans/guides/workflow/node/list-operator",
+                                                    "zh-hans/guides/workflow/node/variable-aggregator",
+                                                    "zh-hans/guides/workflow/node/variable-assigner",
+                                                    "zh-hans/guides/workflow/node/iteration",
+                                                    "zh-hans/guides/workflow/node/parameter-extractor",
+                                                    "zh-hans/guides/workflow/node/http-request",
+                                                    "zh-hans/guides/workflow/node/agent",
+                                                    "zh-hans/guides/workflow/node/tools",
+                                                    "zh-hans/guides/workflow/node/end",
+                                                    "zh-hans/guides/workflow/node/answer",
+                                                    "zh-hans/guides/workflow/node/loop"
+                                                ]
+                                            },
+                                            "zh-hans/guides/workflow/shortcut-key",
+                                            "zh-hans/guides/workflow/orchestrate-node",
+                                            "zh-hans/guides/workflow/file-upload",
+                                            {
+                                                "group": "异常处理",
+                                                "pages": [
+                                                    "zh-hans/guides/workflow/error-handling/readme",
+                                                    "zh-hans/guides/workflow/error-handling/predefined-nodes-failure-logic",
+                                                    "zh-hans/guides/workflow/error-handling/error-type"
+                                                ]
+                                            },
+                                            "zh-hans/guides/workflow/additional-feature",
+                                            {
+                                                "group": "预览与调试",
+                                                "pages": [
+                                                    "zh-hans/guides/workflow/debug-and-preview/preview-and-run",
+                                                    "zh-hans/guides/workflow/debug-and-preview/step-run",
+                                                    "zh-hans/guides/workflow/debug-and-preview/history-and-logs",
+                                                    "zh-hans/guides/workflow/debug-and-preview/variable-inspect"
+                                                ]
+                                            },
+                                            "zh-hans/guides/workflow/publish",
+                                            "zh-hans/guides/workflow/structured-outputs",
+                                            "zh-hans/guides/workflow/bulletin"
+                                        ]
+                                    },
+                                    {
+                                        "group": "知识库",
+                                        "pages": [
+                                            "zh-hans/guides/knowledge-base/readme",
+                                            {
+                                                "group": "创建知识库",
+                                                "pages": [
+                                                    "zh-hans/guides/knowledge-base/knowledge-base-creation/introduction",
+                                                    {
+                                                        "group": "1. 导入文本数据",
+                                                        "pages": [
+                                                            "zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents/import-content-data/readme",
+                                                            "zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents/import-content-data/sync-from-notion",
+                                                            "zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents/import-content-data/sync-from-website"
+                                                        ]
+                                                    },
+                                                    "zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents/chunking-and-cleaning-text",
+                                                    "zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents/setting-indexing-methods"
+                                                ]
+                                            },
+                                            {
+                                                "group": "管理知识库",
+                                                "pages": [
+                                                    "zh-hans/guides/knowledge-base/knowledge-and-documents-maintenance/introduction",
+                                                    "zh-hans/guides/knowledge-base/knowledge-and-documents-maintenance/maintain-knowledge-documents",
+                                                    "zh-hans/guides/knowledge-base/knowledge-and-documents-maintenance/maintain-dataset-via-api"
+                                                ]
+                                            },
+                                            "zh-hans/guides/knowledge-base/metadata",
+                                            "zh-hans/guides/knowledge-base/integrate-knowledge-within-application",
+                                            "zh-hans/guides/knowledge-base/retrieval-test-and-citation",
+                                            "zh-hans/guides/knowledge-base/knowledge-request-rate-limit",
+                                            "zh-hans/guides/knowledge-base/connect-external-knowledge-base",
+                                            "zh-hans/guides/knowledge-base/api-documentation/external-knowledge-api-documentation"
+                                        ]
+                                    },
+                                    {
+                                        "group": "工具",
+                                        "pages": [
+                                            "zh-hans/guides/tools/readme",
+                                            "zh-hans/guides/tools/mcp",
+                                            "zh-hans/guides/tools/quick-tool-integration",
+                                            "zh-hans/guides/tools/advanced-tool-integration",
+                                            {
+                                                "group": "工具配置详情",
+                                                "pages": [
+                                                    "zh-hans/guides/tools/tool-configuration/google",
+                                                    "zh-hans/guides/tools/tool-configuration/bing",
+                                                    "zh-hans/guides/tools/tool-configuration/searchapi",
+                                                    "zh-hans/guides/tools/tool-configuration/stable-diffusion",
+                                                    "zh-hans/guides/tools/tool-configuration/dall-e",
+                                                    "zh-hans/guides/tools/tool-configuration/perplexity",
+                                                    "zh-hans/guides/tools/tool-configuration/alphavantage",
+                                                    "zh-hans/guides/tools/tool-configuration/searxng",
+                                                    "zh-hans/guides/tools/tool-configuration/serper",
+                                                    "zh-hans/guides/tools/tool-configuration/siliconflow",
+                                                    "zh-hans/guides/tools/tool-configuration/comfyui"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "group": "发布",
+                                        "pages": [
+                                            {
+                                                "group": "发布为公开 Web 站点",
+                                                "pages": [
+                                                    "zh-hans/guides/application-publishing/launch-your-webapp-quickly/readme",
+                                                    "zh-hans/guides/application-publishing/launch-your-webapp-quickly/web-app-settings",
+                                                    "zh-hans/guides/application-publishing/launch-your-webapp-quickly/text-generator",
+                                                    "zh-hans/guides/application-publishing/launch-your-webapp-quickly/conversation-application"
+                                                ]
+                                            },
+                                            "zh-hans/guides/application-publishing/publish-mcp",
+                                            "zh-hans/guides/application-publishing/embedding-in-websites",
+                                            "zh-hans/guides/application-publishing/developing-with-apis",
+                                            "zh-hans/guides/application-publishing/based-on-frontend-templates"
+                                        ]
+                                    },
+                                    {
+                                        "group": "标注",
+                                        "pages": [
+                                            "zh-hans/guides/annotation/logs",
+                                            "zh-hans/guides/annotation/annotation-reply"
+                                        ]
+                                    },
+
+                                    {
+                                        "group": "扩展",
+                                        "pages": [
+                                            "zh-hans/guides/tools/extensions/README",
+                                            {
+                                                "group": "API 扩展",
+                                                "pages": [
+                                                    "zh-hans/guides/tools/extensions/api-based/api-based-extension",
+                                                    "zh-hans/guides/tools/extensions/api-based/external-data-tool",
+                                                    "zh-hans/guides/tools/extensions/api-based/cloudflare-workers",
+                                                    "zh-hans/guides/tools/extensions/api-based/moderation"
+                                                ]
+                                            },
+                                            {
+                                                "group": "代码扩展",
+                                                "pages": [
+                                                    "zh-hans/guides/tools/extensions/code-based/README",
+                                                    "zh-hans/guides/tools/extensions/code-based/external-data-tool",
+                                                    "zh-hans/guides/tools/extensions/code-based/moderation"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "group": "协同",
+                                        "pages": [
+                                            "zh-hans/guides/workspace/readme",
+                                            "zh-hans/guides/workspace/app",
+                                            "zh-hans/guides/workspace/invite-and-manage-members"
+                                        ]
+                                    },
+                                    {
+                                        "group": "管理",
+                                        "pages": [
+                                            "zh-hans/guides/management/app-management",
+                                            "zh-hans/guides/management/team-members-management",
+                                            "zh-hans/guides/management/personal-account-management",
+                                            "zh-hans/guides/management/subscription-management",
+                                            "zh-hans/guides/management/version-control"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "动手实验室",
+                                "pages": [
+                                    "zh-hans/workshop/readme",
+                                    {
+                                        "group": "初级",
+                                        "pages": [
+                                            "zh-hans/workshop/basic/build-ai-image-generation-app",
+                                            "zh-hans/workshop/basic/travel-assistant",
+                                            "zh-hans/workshop/basic/the-right-way-of-markdown"
+                                        ]
+                                    },
+                                    {
+                                        "group": "中级",
+                                        "pages": [
+                                            "zh-hans/workshop/intermediate/article-reader",
+                                            "zh-hans/workshop/intermediate/customer-service-bot",
+                                            "zh-hans/workshop/intermediate/twitter-chatflow"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "插件",
+                                "pages": [
+                                    "zh-hans/plugins/introduction",
+                                    {
+                                        "group": "快速开始",
+                                        "pages": [
+                                            "zh-hans/plugins/quick-start/README",
+                                            "zh-hans/plugins/quick-start/install-plugins",
+                                            {
+                                                "group": "插件开发",
+                                                "pages": [
+                                                    "zh-hans/plugins/quick-start/develop-plugins/README",
+                                                    "zh-hans/plugins/quick-start/develop-plugins/initialize-development-tools",
+                                                    "zh-hans/plugins/quick-start/develop-plugins/tool-plugin",
+                                                    {
+                                                        "group": "Model 插件",
+                                                        "pages": [
+                                                            "zh-hans/plugins/quick-start/develop-plugins/model-plugin/README",
+                                                            "zh-hans/plugins/quick-start/develop-plugins/model-plugin/create-model-providers",
+                                                            "zh-hans/plugins/quick-start/develop-plugins/model-plugin/integrate-the-predefined-model",
+                                                            "zh-hans/plugins/quick-start/develop-plugins/model-plugin/customizable-model"
+                                                        ]
+                                                    },
+                                                    "zh-hans/plugins/quick-start/develop-plugins/agent-strategy-plugin",
+                                                    "zh-hans/plugins/quick-start/develop-plugins/extension-plugin",
+                                                    "zh-hans/plugins/quick-start/develop-plugins/bundle"
+                                                ]
+                                            },
+                                            "zh-hans/plugins/quick-start/debug-plugin"
+                                        ]
+                                    },
+                                    "zh-hans/plugins/manage-plugins",
+                                    {
+                                        "group": "接口定义",
+                                        "pages": [
+                                            "zh-hans/plugins/schema-definition/manifest",
+                                            "zh-hans/plugins/schema-definition/endpoint",
+                                            "zh-hans/plugins/schema-definition/tool",
+                                            "zh-hans/plugins/schema-definition/agent",
+                                            {
+                                                "group": "Model",
+                                                "pages": [
+                                                    "zh-hans/plugins/schema-definition/model/model-designing-rules",
+                                                    "zh-hans/plugins/schema-definition/model/model-schema"
+                                                ]
+                                            },
+                                            "zh-hans/plugins/schema-definition/general-specifications",
+                                            "zh-hans/plugins/schema-definition/persistent-storage",
+                                            {
+                                                "group": "反向调用 Dify 服务",
+                                                "pages": [
+                                                    "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/README",
+                                                    "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/app",
+                                                    "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/model",
+                                                    "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/tool",
+                                                    "zh-hans/plugins/schema-definition/reverse-invocation-of-the-dify-service/node"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "group": "最佳实践",
+                                        "pages": [
+                                            "zh-hans/plugins/best-practice/develop-a-slack-bot-plugin",
+                                            "zh-hans/plugins/best-practice/how-to-use-mcp-zapier",
+                                            "zh-hans/plugins/best-practice/how-to-print-strings-to-logs-for-debugging"
+                                        ]
+                                    },
+                                    {
+                                        "group": "发布插件",
+                                        "pages": [
+                                            "zh-hans/plugins/publish-plugins/README",
+                                            "zh-hans/plugins/publish-plugins/plugin-auto-publish-pr",
+                                            {
+                                                "group": "发布至 Dify Marketplace",
+                                                "pages": [
+                                                    "zh-hans/plugins/publish-plugins/publish-to-dify-marketplace/README",
+                                                    "zh-hans/plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines",
+                                                    "zh-hans/plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines"
+                                                ]
+                                            },
+                                            "zh-hans/plugins/publish-plugins/publish-plugin-on-personal-github-repo",
+                                            "zh-hans/plugins/publish-plugins/package-plugin-file-and-publish",
+                                            "zh-hans/plugins/publish-plugins/signing-plugins-for-third-party-signature-verification"
+                                        ]
+                                    },
+                                    "zh-hans/plugins/faq"
+                                ]
+                            },
+                            {
+                                "group": "研发",
+                                "pages": [
+                                    {
+                                        "group": "DifySandbox",
+                                        "pages": [
+                                            "zh-hans/development/backend/sandbox/README",
+                                            "zh-hans/development/backend/sandbox/contribution"
+                                        ]
+                                    },
+                                    {
+                                        "group": "模型接入",
+                                        "pages": [
+                                            "zh-hans/development/models-integration/hugging-face",
+                                            "zh-hans/development/models-integration/replicate",
+                                            "zh-hans/development/models-integration/xinference",
+                                            "zh-hans/development/models-integration/openllm",
+                                            "zh-hans/development/models-integration/localai",
+                                            "zh-hans/development/models-integration/ollama",
+                                            "zh-hans/development/models-integration/litellm",
+                                            "zh-hans/development/models-integration/gpustack",
+                                            "zh-hans/development/models-integration/aws-bedrock-deepseek",
+                                            "zh-hans/development/models-integration/gpt-oss-local-deployment"
+                                        ]
+                                    },
+                                    {
+                                        "group": "迁移",
+                                        "pages": [
+                                            "zh-hans/development/migration/migrate-to-v1"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "阅读更多",
+                                "pages": [
+                                    {
+                                        "group": "应用案例",
+                                        "pages": [
+                                            "zh-hans/learn-more/use-cases/integrate-deepseek-to-build-an-ai-app",
+                                            "zh-hans/learn-more/use-cases/private-ai-ollama-deepseek-dify",
+                                            "zh-hans/learn-more/use-cases/train-a-qa-chatbot-that-belongs-to-you",
+                                            "zh-hans/learn-more/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code",
+                                            "zh-hans/learn-more/use-cases/build-an-notion-ai-assistant",
+                                            "zh-hans/learn-more/use-cases/building-an-ai-thesis-slack-bot",
+                                            "zh-hans/learn-more/use-cases/connect-dify-to-various-im-platforms-by-using-langbot",
+                                            "zh-hans/learn-more/use-cases/create-an-ai-chatbot-with-business-data-in-minutes",
+                                            "zh-hans/learn-more/use-cases/practical-implementation-of-building-llm-applications-using-a-full-set-of-open-source-tools",
+                                            "zh-hans/learn-more/use-cases/dify-on-wechat",
+                                            "zh-hans/learn-more/use-cases/dify-on-dingtalk",
+                                            "zh-hans/learn-more/use-cases/dify-on-teams",
+                                            "zh-hans/learn-more/use-cases/how-to-make-llm-app-provide-a-progressive-chat-experience",
+                                            "zh-hans/learn-more/use-cases/how-to-integrate-dify-chatbot-to-your-wix-website",
+                                            "zh-hans/learn-more/use-cases/how-to-connect-aws-bedrock",
+                                            "zh-hans/learn-more/use-cases/dify-schedule",
+                                            "zh-hans/learn-more/use-cases/dify-model-arena",
+                                            "zh-hans/learn-more/use-cases/build-ai-sales-avatar",
+                                            "zh-hans/learn-more/use-cases/ai-bot-rongcloud-dify-integration-guide"
+                                        ]
+                                    },
+                                    {
+                                        "group": "扩展阅读",
+                                        "pages": [
+                                            "zh-hans/learn-more/extended-reading/what-is-llmops",
+                                            "zh-hans/learn-more/extended-reading/what-is-array-variable",
+                                            {
+                                                "group": "检索增强生成（RAG）",
+                                                "pages": [
+                                                    "zh-hans/learn-more/extended-reading/retrieval-augment/README",
+                                                    "zh-hans/learn-more/extended-reading/retrieval-augment/hybrid-search",
+                                                    "zh-hans/learn-more/extended-reading/retrieval-augment/rerank",
+                                                    "zh-hans/learn-more/extended-reading/retrieval-augment/retrieval"
+                                                ]
+                                            },
+                                            "zh-hans/learn-more/extended-reading/prompt-engineering",
+                                            "zh-hans/learn-more/extended-reading/how-to-use-json-schema-in-dify",
+                                            "zh-hans/learn-more/extended-reading/dify-docs-mcp"
+                                        ]
+                                    },
+                                    {
+                                        "group": "常见问题",
+                                        "pages": [
+                                            "zh-hans/learn-more/faq/install-faq",
+                                            "zh-hans/learn-more/faq/llms-use-faq",
+                                            "zh-hans/learn-more/faq/plugins"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "政策",
+                                "pages": [
+                                    "zh-hans/policies/open-source",
+                                    {
+                                        "group": "用户协议",
+                                        "pages": [
+                                            "zh-hans/policies/agreement/README",
+                                            "zh-hans/policies/agreement/tos",
+                                            "zh-hans/policies/agreement/privacy",
+                                            "zh-hans/policies/agreement/get-compliance-report"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "插件开发",
+                        "groups": [
+                            {
+                                "group": "概念与入门",
+                                "pages": [
+                                    {
+                                        "group": "概览",
+                                        "pages": [
+                                            "plugin-dev-zh/0111-getting-started-dify-plugin"
+                                        ]
+                                    },
+                                    "plugin-dev-zh/0131-cheatsheet"
+                                ]
+                            },
+                            {
+                                "group": "开发实践",
+                                "pages": [
+                                    {
+                                        "group": "快速开始",
+                                        "pages": [
+                                            "plugin-dev-zh/0211-getting-started-by-prompt",
+                                            "plugin-dev-zh/0211-getting-started-dify-tool",
+                                            "plugin-dev-zh/0211-getting-started-new-model"
+                                        ]
+                                    },
+                                    {
+                                        "group": "开发 Dify 插件",
+                                        "pages": [
+                                            "plugin-dev-zh/0221-initialize-development-tools",
+                                            "plugin-dev-zh/0222-creating-new-model-provider-extra",
+                                            "plugin-dev-zh/0222-creating-new-model-provider",
+                                            "plugin-dev-zh/0222-debugging-logs",
+                                            "plugin-dev-zh/0222-tool-plugin"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "贡献与发布",
+                                "pages": [
+                                    {
+                                        "group": "行为准则与规范",
+                                        "pages": [
+                                            "plugin-dev-zh/0312-contributor-covenant-code-of-conduct",
+                                            "plugin-dev-zh/0312-privacy-protection-guidelines",
+                                            "plugin-dev-zh/0312-third-party-signature-verification"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "实践案例与示例",
+                                "pages": [
+                                    {
+                                        "group": "开发示例",
+                                        "pages": [
+                                            "plugin-dev-zh/0431-example-overview-and-index",
+                                            "plugin-dev-zh/0432-develop-a-slack-bot-plugin",
+                                            "plugin-dev-zh/0432-endpoint"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "高级开发",
+                                "pages": [
+                                    {
+                                        "group": "Extension 与 Agent",
+                                        "pages": [
+                                            "plugin-dev-zh/9231-extension-plugin",
+                                            "plugin-dev-zh/9232-agent",
+                                            "plugin-dev-zh/9433-agent-strategy-plugin"
+                                        ]
+                                    },
+                                    {
+                                        "group": "反向调用",
+                                        "pages": [
+                                            "plugin-dev-zh/9241-bundle",
+                                            "plugin-dev-zh/9241-reverse-invocation",
+                                            "plugin-dev-zh/9242-reverse-invocation-app",
+                                            "plugin-dev-zh/9242-reverse-invocation-model",
+                                            "plugin-dev-zh/9242-reverse-invocation-tool",
+                                            "plugin-dev-zh/9243-customizable-model",
+                                            "plugin-dev-zh/9243-reverse-invocation-node"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "Reference & Specifications",
+                                "pages": [
+                                    {
+                                        "group": "核心规范与功能",
+                                        "pages": [
+                                            "plugin-dev-zh/0411-general-specifications",
+                                            "plugin-dev-zh/0411-model-designing-rules",
+                                            "plugin-dev-zh/0411-model-plugin-introduction",
+                                            "plugin-dev-zh/0411-persistent-storage-kv",
+                                            "plugin-dev-zh/0411-plugin-info-by-manifest",
+                                            "plugin-dev-zh/0411-remote-debug-a-plugin",
+                                            "plugin-dev-zh/0411-tool",
+                                            "plugin-dev-zh/0412-model-schema"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "关于本文档",
+                                "pages": [
+                                    "plugin-dev-zh/0411-doc-contribution-guide",
+                                    "plugin-dev-zh/0412-doc-writing-dimensions-guide",
+                                    "plugin-dev-zh/0412-doc-understanding-the-dimensions"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "访问 API",
+                        "groups": [
+                            {
+                                "group": "Chatbot 和 Agent",
+                                "openapi": "zh-hans/openapi_chat.json"
+                            },
+                            {
+                                "group": "Chatflow",
+                                "openapi": "zh-hans/openapi_chatflow.json"
+                            },
+                            {
+                                "group": "工作流",
+                                "openapi": "zh-hans/openapi_workflow.json"
+                            },
+                            {
+                                "group": "文本生成",
+                                "openapi": "zh-hans/openapi_completion.json"
+                            },
+                            {
+                                "group": "知识库 API",
+                                "openapi": "zh-hans/openapi_knowledge.json"
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "资源",
+                        "pages": [
+                            "zh-hans/resources/termbase",
+                            "zh-hans/resources/about-dify/dify-brand-guidelines",
+                            "zh-hans/resources/about-dify/dify-brand-usage-terms"
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "version": "Archived",
+                "href": "https://legacy-docs.dify.ai/"
+            }
+        ],
     "global": {
       "anchors": [
         {
